@@ -14,8 +14,20 @@ export default class MainPage extends Component {
 
   render() {
     return (
-      <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Coucou</Text>
+      <View style={{ flex: 1,
+      flexDirection: 'column',
+      justifyContent: 'space-around'
+     }}>
+        <View style={{ flex: 1 }}>
+            <Text style={ styles.settings }> Settings </Text>
+          <View style={{ flex: 1 }}>
+          </View>
+        </View>
+        <View style={{ }}>
+        <TouchableHighlight style={ styles.newTaskButton }>
+          <Text style={ styles.newText}>New to do</Text>
+          </TouchableHighlight>
+        </View>
       </View>
     );
   }
