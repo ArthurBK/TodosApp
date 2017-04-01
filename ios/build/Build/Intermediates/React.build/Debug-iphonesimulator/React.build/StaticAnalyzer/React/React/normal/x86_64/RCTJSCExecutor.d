@@ -1,0 +1,24 @@
+dependencies: \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Executors/RCTJSCExecutor.mm \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Executors/RCTJSCExecutor.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTJavaScriptExecutor.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTBridgeModule.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTDefines.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTInvalidating.h \
+  /Users/abonneca/TodosApp/ios/build/Build/Products/Debug-iphonesimulator/include/cxxreact/JSBundleType.h \
+  /Users/abonneca/TodosApp/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JavaScriptCore.h \
+  /Users/abonneca/TodosApp/ios/build/Build/Products/Debug-iphonesimulator/include/jschelpers/JSCWrapper.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Modules/JSCSamplingProfiler.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTAssert.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTBridge+Private.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTBridge.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTBridgeDelegate.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTJavaScriptLoader.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTFrameUpdate.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Modules/RCTDevMenu.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Executors/RCTJSCErrorHandling.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Profiler/RCTJSCProfiler.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTLog.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTPerformanceLogger.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Profiler/RCTProfile.h \
+  /Users/abonneca/TodosApp/node_modules/react-native/React/Base/RCTUtils.h
