@@ -9,15 +9,6 @@ import {
 import styles from '../styles/styles';
 
 export default class TasksList extends Component {
-  // constructor(props) {
-  //   super(props);
-  //   let ds = new ListView.DataSource({
-  //     rowHasChanged: (row1, row2) => row1 !== row2,
-  //   });
-  //   this.state = {
-  //     dataSource: ds.cloneWithRows(this.props.tasks),
-  //   };
-  // }
 
   componentWillMount() {
     this.dataSource = new ListView.DataSource({
@@ -29,7 +20,17 @@ export default class TasksList extends Component {
     console.log(rowData)
     return (
       <View style={ styles.taskItem }>
+      <View style={{ flex: 1}}>
         <Text>{ rowData.title }</Text>
+        </View>
+        <View style={ styles.remove}>
+        <TouchableHighlight
+          style={ styles.deleteTaskButton }
+          onPress={ () => this.props.deleteTask(rowID) }
+        >
+          <Text style= { styles.removeText }>Remove</Text>
+        </TouchableHighlight>
+        </View>
       </View>
     );
   }

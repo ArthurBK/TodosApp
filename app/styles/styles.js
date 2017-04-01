@@ -30,6 +30,29 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 20,
+  },
+
+  deleteTaskButton: {
+    backgroundColor: '#e74c3c',
+    marginLeft: 30,
+    marginRight: 30,
+    padding: 6,
+  },
+
+  taskItem: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    padding: 10,
+  },
+
+  remove: {
+   flex: 1,
+ },
+
+  removeText: {
+    alignSelf: 'center',
+    color: 'white',
   }
 
 });
