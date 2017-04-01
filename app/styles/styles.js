@@ -8,12 +8,28 @@ export default StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
+
   newText: {
     color: 'white',
     fontWeight: 'bold',
   },
+
   settings: {
     alignSelf: 'flex-end',
     paddingTop: 20,
   },
+
+  form: {
+    flex: 1,
+    paddingTop: 20,
+  },
+
+  buttonText: {
+    backgroundColor: "#2980b9",
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 20,
+  }
+
 });
