@@ -23,6 +23,7 @@ export default StyleSheet.create({
   form: {
     flex: 1,
     paddingTop: 20,
+    margin: 40,
   },
 
   buttonText: {
