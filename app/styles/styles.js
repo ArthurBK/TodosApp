@@ -17,6 +17,7 @@ export default StyleSheet.create({
   settings: {
     alignSelf: 'flex-end',
     paddingTop: 20,
+    width: 60,
   },
 
   form: {
@@ -71,5 +72,10 @@ export default StyleSheet.create({
     fontWeight: 'bold',
     textAlign: 'center',
     padding: 15,
+  },
+
+  retour: {
+    paddingTop: 25,
+    width: 50,
   }
 });

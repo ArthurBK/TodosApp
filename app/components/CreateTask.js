@@ -29,8 +29,20 @@ export default class CreateTask extends Component {
     }
   }
 
+  retour() {
+    this.props.navigator.pop();
+  }
+
   render() {
     return (
+      <View style= {{ flex: 1}}>
+        <View>
+        <TouchableHighlight
+          style = { styles.retour }
+          onPress={ this.retour.bind(this) }>
+          <Text>Retour</Text>
+          </TouchableHighlight>
+        </View>
       <View style={ styles.form }>
         <Form
           ref="form"
@@ -39,6 +51,7 @@ export default class CreateTask extends Component {
         <TouchableHighlight style={styles.createTaskButton} onPress={this.onPress.bind(this)} underlayColor='#99d9f4'>
           <Text style={styles.buttonText}>Create</Text>
         </TouchableHighlight>
+        </View>
       </View>
     );
   }

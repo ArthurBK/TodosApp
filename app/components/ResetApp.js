@@ -8,21 +8,33 @@ import {
 import styles from '../styles/styles';
 
 export default class ResetApp extends Component {
-  onPress() {
+  delete() {
     this.props.deleteAllTasks()
+    this.props.navigator.pop()
+  }
+
+  retour(){
     this.props.navigator.pop()
   }
 
   render() {
     return (
-      <View style={ styles.delete }>
-      <View>
+      <View style= {{ flex: 1}}>
+        <View>
         <TouchableHighlight
-          style={ styles.deleteAllButton }
-          onPress={ this.onPress.bind(this) }
-        >
-          <Text style={ styles.buttonTextDelete }>Delete all Todos</Text>
-        </TouchableHighlight>
+          style = { styles.retour }
+          onPress={ this.retour.bind(this) }>
+          <Text>Retour</Text>
+          </TouchableHighlight>
+        </View>
+        <View style={ styles.delete }>
+          <View>
+            <TouchableHighlight
+              style={ styles.deleteAllButton }
+              onPress={ this.delete.bind(this) }>
+              <Text style={ styles.buttonTextDelete }>Delete all Todos</Text>
+            </TouchableHighlight>
+          </View>
         </View>
       </View>
     );
