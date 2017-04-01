@@ -40,10 +40,11 @@ export default class CreateTask extends Component {
         <TouchableHighlight
           style = { styles.retour }
           onPress={ this.retour.bind(this) }>
-          <Text>Retour</Text>
+          <Text style={ styles.retourText }>Retour</Text>
           </TouchableHighlight>
         </View>
       <View style={ styles.form }>
+        <Text style={ styles.todoTitle }> CREATE A NEW TODO </Text>
         <Form
           ref="form"
           type={Task}

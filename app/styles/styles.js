@@ -18,6 +18,7 @@ export default StyleSheet.create({
     alignSelf: 'flex-end',
     paddingTop: 20,
     width: 60,
+    color: '#808080',
   },
 
   form: {
@@ -46,6 +47,13 @@ export default StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     padding: 10,
+  },
+
+  todoTitle: {
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 20,
+    fontSize: 20
   },
 
   remove: {
@@ -78,5 +86,10 @@ export default StyleSheet.create({
   retour: {
     paddingTop: 25,
     width: 50,
+  },
+
+  retourText: {
+    color: '#808080',
   }
+
 });

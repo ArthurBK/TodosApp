@@ -24,7 +24,7 @@ export default class ResetApp extends Component {
         <TouchableHighlight
           style = { styles.retour }
           onPress={ this.retour.bind(this) }>
-          <Text>Retour</Text>
+          <Text style={ styles.retourText }>Retour</Text>
           </TouchableHighlight>
         </View>
         <View style={ styles.delete }>
