@@ -6,6 +6,7 @@ import {
 
 import MainPage from './app/components/MainPage';
 import CreateTask from './app/components/CreateTask';
+import ResetApp from './app/components/ResetApp';
 import styles from './app/styles/styles';
 
 export default class TodosApp extends Component {
@@ -19,6 +20,11 @@ export default class TodosApp extends Component {
       return (
         <CreateTask navigator={ navigator } createTask={ route.createTask } />
       );
+    }
+    else if (route.name === 'ResetApp') {
+    return (
+      <ResetApp navigator={ navigator } deleteAllTasks={ route.deleteAllTasks } />
+    );
     }
   }
 

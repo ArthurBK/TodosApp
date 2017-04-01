@@ -14,6 +14,7 @@ export default class MainPage extends Component {
     this.state = { tasks: [{ name: '1st Todo', title: 'Make to do app', email:'arthur@gmail.com'}] };
     this.createTask = this.createTask.bind(this)
     this.deleteTask = this.deleteTask.bind(this)
+    this.deleteAllTasks = this.deleteAllTasks.bind(this)
   }
 
   createTask(task) {
@@ -26,6 +27,10 @@ export default class MainPage extends Component {
   let tasks = this.state.tasks;
   tasks.splice(index, 1);
   this.setState({ tasks: tasks })
+}
+
+deleteAllTasks() {
+    this.setState({ tasks: [] })
 }
 
 

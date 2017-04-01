@@ -53,6 +53,23 @@ export default StyleSheet.create({
   removeText: {
     alignSelf: 'center',
     color: 'white',
-  }
+  },
 
+  delete: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+
+  buttonDeleteAll: {
+    height: 30,
+  },
+
+  buttonTextDelete: {
+    backgroundColor: '#e74c3c',
+    color: 'white',
+    fontWeight: 'bold',
+    textAlign: 'center',
+    padding: 15,
+  }
 });
