@@ -5,12 +5,13 @@ import {
   View
 } from 'react-native';
 
+import TasksList from './TasksList';
 import styles from '../styles/styles';
 
 export default class MainPage extends Component {
   constructor(props) {
     super(props);
-    this.state = { tasks: [{ name: 'coucou', title: 'salut', email:'arthur@gmail.com'}] };
+    this.state = { tasks: [{ name: '1st Todo', title: 'Make to do app', email:'arthur@gmail.com'}] };
     this.createTask = this.createTask.bind(this)
   }
 
@@ -29,15 +30,18 @@ export default class MainPage extends Component {
         <View style={{ flex: 1 }}>
             <Text style={ styles.settings }> Settings </Text>
           <View style={{ flex: 1 }}>
+          <TasksList
+            tasks={ this.state.tasks }
+          />
           </View>
         </View>
         <View style={{ }}>
         <TouchableHighlight
-         onPress={ () => this.props.navigator.push({ name: 'CreateTask', createTask: this.createTask }) }
-         style={ styles.newTaskButton }
-       >
-         <Text style={ styles.newText}>New to do</Text>
-       </TouchableHighlight>
+          onPress={ () => this.props.navigator.push({ name: 'CreateTask', createTask: this.createTask }) }
+          style={ styles.newTaskButton }
+        >
+          <Text style={ styles.newText}>New to do</Text>
+        </TouchableHighlight>
         </View>
       </View>
     );
