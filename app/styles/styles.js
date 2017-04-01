@@ -19,6 +19,7 @@ export default StyleSheet.create({
     paddingTop: 20,
     width: 60,
     color: '#808080',
+    marginRight: 10,
   },
 
   form: {
@@ -84,6 +85,7 @@ export default StyleSheet.create({
   },
 
   retour: {
+    marginLeft: 10,
     paddingTop: 25,
     width: 50,
   },
